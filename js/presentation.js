@@ -33,4 +33,6 @@ function toPreviousPage() {
 
 changePageMarker()
 button.addEventListener('click', toNextPage)
-arrow.addEventListener('click', toPreviousPage)
+if (!currentPage.includes('presentation1')) {
+    arrow.addEventListener('click', toPreviousPage)
+}
