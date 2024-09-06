@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    height: 100vh;
+    font-family: Inter;
+}
+
+.previousPage {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    grid-area: 2 / 2;
+}
+
+.previousPage .arrow {
+    cursor: pointer;
+}
+
+.previousPage .arrow path {
+    transition: 0.2s;
+}
+
+.previousPage .arrow:hover path {
+    fill: #FF6064;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: 2 / 4 / 9 / 7;
+}
+
+main #loginText {
+    font-size: 2rem;
+    margin-bottom: 10vh;
+}
+
+main .externalLogin {
+    display: flex;
+    border-radius: 25px;
+    height: 6vh;
+    width: 17vw;
+    background-color: white;
+    cursor: pointer;
+    margin: 2vh 0;
+    justify-content: start;
+    align-items: center;
+    transition: 0.3s;
+}
+
+main .externalLogin:hover {
+    background-color: #DDDDDD;
+}
+
+main .facebook::before {
+    content: url(../images/facebook-logo.png);
+    margin: 0 0.5vw 0 1vw;
+}
+
+main .google::before {
+    content: url(../images/google-logo.png);
+    margin: 0 0.5vw 0 1vw;
+}
+
+main .apple::before {
+    content: url(../images/apple-logo.png);
+    margin: 0 0.5vw 0 1vw;
+}
+
+main .apple {
+    margin-bottom: 8vh;
+}
+
+main .emailLogin {
+    border: none;
+    border-radius: 20px;
+    height: 6vh;
+    width: 20vw;
+    background-color: #FF6064;
+    cursor: pointer;
+    color: white;
+    margin: 8vh 0;
+    transition: 0.3s;
+}
+
+main .button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.185);
+}
+
+main .text {
+    font-size: 0.8rem;
+}
+
+main .text #register {
+    color: #FF6064;
+    text-decoration: none;
+}
