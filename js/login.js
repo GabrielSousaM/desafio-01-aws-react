@@ -4,7 +4,7 @@ const google = document.querySelector(".google")
 const apple = document.querySelector(".apple")
 
 function previousPage() {
-    window.location.replace("../pages/presentation3.html")
+    window.location.replace("../index.html")
 }
 
 function externalLoginFacebook() {
