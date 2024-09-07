@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+    background-color: #FF6064;
+    font-family: Inter;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 3 / 2 / 3 / 5;
+}
+
+header .logo {
+    width: 25vw;
+}
+
+main {
+    display: flex;
+    height: 73vh;
+    width: 24vw;
+    flex-direction: column;
+    align-items: center;
+    grid-area: 3 / 6 / 3 / 9;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.26);
+}
+
+main .title {
+    width: 20vw;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 9vh 0 5vh 0;
+}
+
+main .form {
+    height: 50vh;
+}
+
+main .form .labelText {
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding-left: 1vw;
+}
+
+main .form .textInput {
+    height: 6vh;
+    width: 18vw;
+    border-width: 1px;
+    border-radius: 25px;
+}
+
+main .form .textInput::placeholder {
+    padding-left: 1vw;
+}
+
+main .form .buttonInput {
+    height: 6vh;
+    width: 8.5vw;
+    border-radius: 25px;
+    border-width: 1px;
+    margin: 4vh 0 ;
+}
+
+main .form #goBackButton {
+    background-color: white;
+    margin-right: 1vw;
+}
+
+main .form #createAccountButton {
+    background-color: #FF6064;
+    color: white;
+    border: none;
+}
