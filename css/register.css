@@ -64,12 +64,16 @@ main .form .labelText {
 main .form .textInput {
     height: 6vh;
     width: 18vw;
+    padding-left: 1vw;
     border-width: 1px;
     border-radius: 25px;
 }
 
-main .form .textInput::placeholder {
-    padding-left: 1vw;
+main .form #errorText {
+    text-align: center;
+    padding-top: 1vh;
+    color: #FF6064;
+    font-size: 0.7rem;
 }
 
 main .form .buttonInput {
@@ -77,7 +81,14 @@ main .form .buttonInput {
     width: 8.5vw;
     border-radius: 25px;
     border-width: 1px;
-    margin: 4vh 0 ;
+    cursor: pointer;
+    margin: 4vh 0;
+    transition: 0.3s;
+}
+
+main .form .buttonInput:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.432);
 }
 
 main .form #goBackButton {
