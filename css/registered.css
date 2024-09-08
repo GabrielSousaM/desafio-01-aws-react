@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --underlineDisplay: none;
+    --underlineAnimation: none;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+}
+
+main #title {
+    font-size: 3rem;
+    margin-bottom: 20vh;
+}
+
+main #registeredData {
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #FF6064;
+    height: 60vh;
+    border-radius: 25px;
+    animation: registeredDataAnimation 1s ease-out forwards;
+}
+
+main #registeredData .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+main #registeredData .logoContainer {
+    align-items: center;
+    grid-area: 1 / 1 / 4 / 1;
+}
+
+main #registeredData .usernameContainer {
+    grid-area: 1 / 2 / 1 / 4;
+}
+
+main #registeredData .emailContainer {
+    grid-area: 2 / 2 / 2 / 4;
+}
+
+main #registeredData .passwordContainer {
+    grid-area: 3 / 2 / 3 / 4;
+}
+
+main #registeredData .logo {
+    filter: opacity(0);
+    width: 19vw;
+    border-radius: 50%;
+    animation: logoOpacity 1s 1s forwards;
+}
+
+main #registeredData .logo::after {
+    content: '';
+}
+
+main #registeredData .userData {
+    position: relative;
+    width: 20vw;
+    padding-bottom: 5vh;
+    font-weight: 900;
+    color: white;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    white-space: nowrap;
+}
+
+main #registeredData .userData::-webkit-scrollbar {
+    display: none;
+}
+
+main #registeredData .userData::after {
+    content: '';
+    display: var(--underlineDisplay);
+    position: absolute;
+    left: 0;
+    bottom: 55%;
+    height: 5px;
+    width: 100%;
+    background-color: #d44e52;
+    transform-origin: bottom left;
+    animation: var(--underlineAnimation);
+}
+
+@keyframes underlineAnimation {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes registeredDataAnimation {
+    0% {
+        height: 0;
+        border: solid 5px #d44e5200;
+    }
+
+    100% {
+        height: 60vh;
+        border: solid 5px #d44e52;
+    }
+}
+
+@keyframes logoOpacity {
+    0% {
+        filter: opacity(0);
+    }
+    100% {
+        filter: opacity(1);
+    }
+}
