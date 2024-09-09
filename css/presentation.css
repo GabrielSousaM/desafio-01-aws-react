@@ -19,22 +19,25 @@ body {
     font-family: Inter;
 }
 
-.previousPage {
-    display: flex;
-    background-color: transparent;
-    border: none;
+header {
     grid-area: 3 / 2;
 }
 
-.previousPage .arrow {
+header .previousPage {
+    display: flex;
+    background-color: transparent;
+    border: none;
+}
+
+header .previousPage .arrow {
     cursor: pointer;
 }
 
-.previousPage .arrow path {
+header .previousPage .arrow path {
     transition: 0.2s;
 }
 
-.previousPage .arrow:hover path {
+header .previousPage .arrow:hover path {
     fill: #FF6064;
 }
 
@@ -96,7 +99,8 @@ main .nextPage:hover {
         grid-template-rows: repeat(7, 1fr);
     }
 
-    .previousPage {
+    header {
+        display: flex;
         grid-area: 1 / 1 / 1 / 3;
         justify-content: center;
         align-items: flex-end;
