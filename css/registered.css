@@ -4,30 +4,36 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, fr);
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+    grid-area: 1 / 2 / 6 / 5;
 }
 
 main #title {
+    grid-area: 1 / 1 / 1 / 6;
     text-align: center;
     font-size: 3rem;
     margin-bottom: 20vh;
+    margin: 8vh 0 13vh 0;
 }
 
 main #registeredData {
     display: grid;
+    grid-area: 2 / 2 / 6 / 5;
     grid-template-columns: 2fr repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    align-self: center;
     background-color: #FF6064;
     height: 60vh;
+    width: 50vw;
     border-radius: 25px;
     animation: registeredDataAnimation 1s ease-out forwards;
 }
@@ -123,12 +129,11 @@ main #registeredData .userData::after {
 
     main {
         width: 100vw;
-        align-items: center
     }
 
     main #title {
         font-size: 2rem;
-        margin-bottom: 10vh;
+        margin: 12vh 0 8vh 0;
     }
 
     main #registeredData {
