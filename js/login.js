@@ -3,18 +3,22 @@ const facebook = document.querySelector(".facebook")
 const google = document.querySelector(".google")
 const apple = document.querySelector(".apple")
 
+/* Volta para a página de loading */
 function previousPage() {
     window.location.replace("../index.html")
 }
 
+/* Leva o usuário para a página inicial do Facebook */
 function externalLoginFacebook() {
     window.open("https://www.facebook.com", "_blank")
 }
 
+/* Leva o usuário para a página inicial do Google */
 function externalLoginGoogle() {
     window.open("https://www.google.com", "_blank")
 }
 
+/* Leva o usuário para a página inicial da Apple */
 function externalLoginApple() {
     window.open("https://www.apple.com", "_blank")
 }

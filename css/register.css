@@ -29,6 +29,7 @@ main {
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.26);
 }
 
+/* Texto acima do formulário */
 main .title {
     width: 20vw;
     text-align: center;
@@ -41,6 +42,7 @@ main .form {
     height: 50vh;
 }
 
+/* Caixas de texto do formulário */
 main .form .labelText {
     font-size: 0.7rem;
     font-weight: 500;
@@ -55,6 +57,7 @@ main .form .textInput {
     border-radius: 25px;
 }
 
+/* Texto de informações incorretas no formulário */
 main .form #errorText {
     text-align: center;
     padding-top: 1vh;
@@ -62,6 +65,7 @@ main .form #errorText {
     font-size: 0.7rem;
 }
 
+/* Botões do formulário */
 main .form .buttonInput {
     height: 6vh;
     width: 8.5vw;
@@ -88,6 +92,7 @@ main .form #createAccountButton {
     border: none;
 }
 
+/* Responsividade para Celulares */
 @media (min-width: 375px) and (max-width:500px) {
     body {
         display: flex;

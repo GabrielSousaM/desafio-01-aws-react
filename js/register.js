@@ -6,10 +6,12 @@ const password = document.getElementById("password")
 const confirmPassword = document.getElementById("confirmPassword")
 const errorText = document.getElementById("errorText")
 
+/* Volta para a página anterior */
 function previousPage() {
     window.location.replace("../pages/login.html")
 }
 
+/* Valida se existem informações escritas no formulário e se elas estão corretas */
 function validateInformation() {
     errorText.innerHTML = ""
     userName.style.borderColor = "black"
@@ -51,6 +53,7 @@ function validateInformation() {
     else return true
 }
 
+/* Salva os dados no localStorage e passa para a próxima página */
 function getData() {
     if (validateInformation()) {
         localStorage.setItem("username", userName.value)

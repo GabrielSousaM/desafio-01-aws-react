@@ -3,6 +3,7 @@ let arrow = document.querySelector('.arrow')
 let pageMarkers = document.querySelectorAll('.markers')
 let currentPage = window.location.href
 
+/* Muda a forma e cor do marcador de página */
 function changePageMarker() {
     if (currentPage.includes('presentation1')) {
         pageMarkers[0].style.animation = 'pageMarkerChange 0.4s forwards'
@@ -13,6 +14,7 @@ function changePageMarker() {
     }
 }
 
+/* Passa para a próxima página */
 function toNextPage() {
     if (currentPage.includes('presentation1')) {
         window.location.replace("presentation2.html")
@@ -23,6 +25,7 @@ function toNextPage() {
     }
 }
 
+/* Volta para a página anterio */
 function toPreviousPage() {
     if (currentPage.includes('presentation3')) {
         window.location.replace("presentation2.html")

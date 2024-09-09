@@ -1,3 +1,4 @@
+/* Variáveis para alterar pseudo-elementos dinamicamente */
 :root {
     --underlineDisplay: none;
     --underlineAnimation: none;
@@ -17,6 +18,7 @@ main {
     grid-area: 1 / 2 / 6 / 5;
 }
 
+/* Mensagem de usuário registrado */
 main #title {
     grid-area: 1 / 1 / 1 / 6;
     text-align: center;
@@ -25,6 +27,7 @@ main #title {
     margin: 8vh 0 13vh 0;
 }
 
+/* Container contendo a logo da Pomo e os dados do usuário */
 main #registeredData {
     display: grid;
     grid-area: 2 / 2 / 6 / 5;
@@ -38,6 +41,7 @@ main #registeredData {
     animation: registeredDataAnimation 1s ease-out forwards;
 }
 
+/* Organização do conteúdo */
 main #registeredData .container {
     display: flex;
     justify-content: center;
@@ -61,6 +65,7 @@ main #registeredData .passwordContainer {
     grid-area: 3 / 2 / 3 / 4;
 }
 
+/* Logo */
 main #registeredData .logo {
     filter: opacity(0);
     width: 19vw;
@@ -68,6 +73,7 @@ main #registeredData .logo {
     animation: logoOpacity 1s 1s forwards;
 }
 
+/* Dados do usuário */
 main #registeredData .userData {
     position: relative;
     width: 20vw;
@@ -79,6 +85,7 @@ main #registeredData .userData {
     white-space: nowrap;
 }
 
+/* Linha abaixo dos dados do usuário */
 main #registeredData .userData::after {
     content: '';
     display: var(--underlineDisplay);
@@ -92,6 +99,7 @@ main #registeredData .userData::after {
     animation: var(--underlineAnimation);
 }
 
+/* Animação para a linha abaixo dos dados do usuário */
 @keyframes underlineAnimation {
     0% {
         transform: scaleX(0);
@@ -101,6 +109,7 @@ main #registeredData .userData::after {
     }
 }
 
+/* Animação do container onde fica os dados do usuário e a logo da Pomo */
 @keyframes registeredDataAnimation {
     0% {
         height: 0;
@@ -113,6 +122,7 @@ main #registeredData .userData::after {
     }
 }
 
+/* Animação para a logo aparecer após a animação do container */
 @keyframes logoOpacity {
     0% {
         filter: opacity(0);
@@ -122,6 +132,8 @@ main #registeredData .userData::after {
     }
 }
 
+
+/* Responsividade para Celulares */
 @media (min-width: 375px) and (max-width:500px) {
     body {
         justify-content: flex-start;

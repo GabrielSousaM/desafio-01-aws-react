@@ -9,6 +9,7 @@ header {
     grid-area: 2 / 2;
 }
 
+/* Seta de voltar para a tela de loading */
 header .previousPage {
     display: flex;
     background-color: transparent;
@@ -34,11 +35,13 @@ main {
     grid-area: 2 / 4 / 9 / 7;
 }
 
+/* Texto acima dos botões de login */
 main #loginText {
     font-size: 2rem;
     margin-bottom: 10vh;
 }
 
+/* Botões de login externo */
 main #externalLoginButtons {
     display: flex;
     flex-direction: column;
@@ -81,6 +84,7 @@ main #externalLoginButtons .apple {
     margin-bottom: 8vh;
 }
 
+/* Botão de login por email */
 main .emailLogin {
     border: none;
     border-radius: 20px;
@@ -93,11 +97,13 @@ main .emailLogin {
     transition: 0.3s;
 }
 
+/* Animação para todos os botões */
 main .button:hover {
     transform: translateY(-5px);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.185);
 }
 
+/* Textos da página */
 main .text {
     font-size: 0.8rem;
 }
@@ -107,6 +113,7 @@ main .text #register {
     text-decoration: none;
 }
 
+/* Responsividade para Celulares */
 @media (min-width: 375px) and (max-width: 500px) {
     body {
         grid-template-columns: repeat(5, 1fr);

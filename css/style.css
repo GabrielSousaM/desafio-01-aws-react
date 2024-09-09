@@ -11,19 +11,21 @@ body {
     justify-content: center;
 }
 
+/* Conteúdo da logo */
 .content-logo {
     grid-area: 2 / 3;
 }
 
+.content-logo #logo {
+    width: 14vw;
+}
+
+/* Conteúdo do gif de loading */
 .content-loading {
     grid-area: 4 / 3;
 }
 
-#logo {
-    width: 14vw;
-}
-
-#loading {
+.content-loading #loading {
     width: 4vw;
 }
 

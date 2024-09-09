@@ -9,6 +9,7 @@ header {
     grid-area: 3 / 2;
 }
 
+/* Seta de voltar para a página anterior */
 header .previousPage {
     display: flex;
     background-color: transparent;
@@ -34,11 +35,13 @@ main {
     grid-area: 3 / 5;
 }
 
+/* Imagem de apresentação */
 main #image {
     width: 28vw;
     margin-bottom: 4vh;
 }
 
+/* Marcadores de página */
 main .pageMarkers {
     display: flex;
     justify-content: space-around;
@@ -54,6 +57,7 @@ main .pageMarkers .markers {
     border-radius: 50%;
 }
 
+/* Botão de avançar entre as páginas */
 main .nextPage {
     border: none;
     border-radius: 20px;
@@ -70,6 +74,7 @@ main .nextPage:hover {
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.432);
 }
 
+/* Animação dos marcadores de página ao mudar de página */
 @keyframes pageMarkerChange {
     100% {
         height: 15px;
@@ -79,6 +84,7 @@ main .nextPage:hover {
     }
 }
 
+/* Responsividade para celular */
 @media (min-width: 375px) and (max-width:500px) {
     body {
         grid-template-columns: repeat(9, 1fr);

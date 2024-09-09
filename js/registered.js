@@ -5,6 +5,7 @@ const password = document.querySelector("#password")
 const root = document.querySelector(":root")
 let index = 0
 
+/* Ajusta o tamanho do texto em caso de passar da borda container */
 function adjustFontSize(text) {
     const maxWidth = text.clientWidth;
     let fontSize = 16;
@@ -17,12 +18,17 @@ function adjustFontSize(text) {
     }
   }
 
+/* Adiciona uma linha abaixo de onde os dados do usuário serão inseridos, e depois simula a digitação dos dados do usuário acima da linha. */
 function dataAnimation() {
     let usernameText = `Name: ${localStorage.getItem("username")}`
     let emailText = `Email: ${localStorage.getItem("email")}`
     let passwordText = `Password: ${localStorage.getItem("password")}`
+
+    /* Animação da linha sendo adicionada em variáveis do CSS */
     root.style.setProperty("--underlineAnimation", "underlineAnimation 1s ease-out forwards")
     root.style.setProperty("--underlineDisplay", "block")
+
+    /* Animação simulando a digitação dos dados do usuário */
     let write = setInterval(() => {
         if (index < usernameText.length) {
             username.innerHTML += usernameText[index]
