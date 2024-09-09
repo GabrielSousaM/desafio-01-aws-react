@@ -44,6 +44,8 @@ A página de registro apresenta um formulário que pede um nome, um e-mail, uma 
 ## Funcionalidades
 
 - Responsividade para celulares
+- Responsividade para tablets
+- Responsividade para laptops
 
 
 ## Rodando localmente
