@@ -1,21 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
-    font-weight: 100 900;
-    font-style: normal;
-}
-
 body {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    height: 100vh;
     background-color: #FF6064;
     font-family: Inter;
 }

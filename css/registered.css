@@ -1,26 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --underlineDisplay: none;
     --underlineAnimation: none;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
-    font-weight: 100 900;
-    font-style: normal;
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 main {

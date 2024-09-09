@@ -1,14 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     display: grid;
     grid-template-rows: repeat(5, 20%);
     grid-template-columns: repeat(5, 20%);
-    height: 100vh;
     background-color: #FF6064;
 }
 
