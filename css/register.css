@@ -93,7 +93,7 @@ main .form #createAccountButton {
 }
 
 /* Responsividade para Celulares */
-@media (min-width: 375px) and (max-width:500px) {
+@media (max-width: 425px) {
     body {
         display: flex;
         flex-direction: column;
@@ -140,6 +140,107 @@ main .form #createAccountButton {
     
     main .form .buttonInput {
         width: 37vw;
+        margin: 1vh 0 0 0;
+    }
+}
+
+/* Responsividade para Tablets */
+@media (min-width: 426px) and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    header .logo {
+        width: 50vw;
+    }
+
+    main {
+        height: 90vh;
+        width: 100vw;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    main .title {
+        width: 50vw;
+        font-size: 2.2rem;
+        font-weight: normal;
+        margin: 8vh 0 5vh 0;
+    }
+
+    main .form {
+        height: 40vh;
+        width: 50vw;
+        white-space: nowrap;
+    }
+    
+    main .form .labelText {
+        font-size: 1.2rem;
+        padding-left: 2vw;
+    }
+    
+    main .form .textInput {
+        width: 100%;
+        margin-bottom: 1vh;
+        padding-left: 2vw;
+    }
+    
+    main .form #errorText {
+        font-size: 1rem;
+        padding-top: 0;
+    }
+    
+    main .form .buttonInput {
+        width: 24.3vw;
+        margin: 1vh 0 0 0;
+    }
+}
+
+/* Responsividade para Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header .logo {
+        width: 40vw;
+    }
+
+    main {
+        height: 65vh;
+        width: 35vw;
+        align-items: center;
+    }
+    
+    main .title {
+        width: 34vw;
+        font-size: 2rem;
+        font-weight: normal;
+        margin: 8vh 0 5vh 0;
+    }
+
+    main .form {
+        height: 30vh;
+        width: 30vw;
+        white-space: nowrap;
+    }
+    
+    main .form .labelText {
+        font-size: 1rem;
+        padding-left: 1.5vw;
+    }
+    
+    main .form .textInput {
+        width: 100%;
+        margin-bottom: 1vh;
+        padding-left: 1.5vw;
+    }
+    
+    main .form #errorText {
+        font-size: 1rem;
+        padding-top: 0;
+    }
+    
+    main .form .buttonInput {
+        width: 14.3vw;
         margin: 1vh 0 0 0;
     }
 }

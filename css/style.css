@@ -29,7 +29,8 @@ body {
     width: 4vw;
 }
 
-@media (min-width: 375px) and (max-width: 500px) {
+/* Responsividade para celulares */
+@media (max-width: 425px) {
     body {
         grid-template-rows: repeat(6, 1fr);
         grid-template-columns: repeat(4, 1fr);
@@ -43,11 +44,59 @@ body {
         grid-area: 5 / 2 / 5 / 4;
     }
 
-    #logo {
+    .content-logo #logo {
         width: 35vw;
     }
     
-    #loading {
+    .content-loading #loading {
         width: 13vw;
+    }
+}
+
+/* Responsividade para Tablets */
+@media (min-width: 426px) and (max-width: 768px) {
+    body {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .content-logo {
+        grid-area: 2 / 2 / 4 / 4;
+    }
+    
+    .content-loading {
+        grid-area: 5 / 2 / 5 / 4;
+    }
+
+    .content-logo #logo {
+        width: 25vw;
+    }
+    
+    .content-loading #loading {
+        width: 10vw;
+    }
+}
+
+/* Responsividade para Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .content-logo {
+        grid-area: 2 / 2 / 4 / 4;
+    }
+    
+    .content-loading {
+        grid-area: 5 / 2 / 5 / 4;
+    }
+
+    .content-logo #logo {
+        width: 18vw;
+    }
+    
+    .content-loading #loading {
+        width: 8vw;
     }
 }

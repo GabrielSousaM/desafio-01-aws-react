@@ -7,7 +7,7 @@
 body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, fr);
+    grid-template-rows: repeat(5, 1fr);
 }
 
 main {
@@ -134,11 +134,7 @@ main #registeredData .userData::after {
 
 
 /* Responsividade para Celulares */
-@media (min-width: 375px) and (max-width:500px) {
-    body {
-        justify-content: flex-start;
-    }
-
+@media (max-width: 425px) {
     main {
         width: 100vw;
     }
@@ -176,6 +172,77 @@ main #registeredData .userData::after {
     
     main #registeredData .userData {
         width: 65vw;
+        padding-bottom: 5vh;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+    }
+}
+
+/* Responsividade para Tablets */
+@media (min-width: 426px) and (max-width: 768px) {
+    main {
+        width: 100vw;
+    }
+
+    main #title {
+        font-size: 2rem;
+        margin: 12vh 0 8vh 0;
+    }
+
+    main #registeredData {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr repeat(3, 1fr);
+        width: 80vw;
+    }
+    
+    main #registeredData .logoContainer {
+        grid-area: 1 / 1 / 1 / 4;
+    }
+    
+    main #registeredData .usernameContainer {
+        grid-area: 2 / 1 / 2 / 4;
+    }
+    
+    main #registeredData .emailContainer {
+        grid-area: 3 / 1 / 3 / 4;
+    }
+    
+    main #registeredData .passwordContainer {
+        grid-area: 4 / 1 / 4 / 4;
+    }
+
+    main #registeredData .logo {
+        width: 45vw;
+    }
+    
+    main #registeredData .userData {
+        width: 65vw;
+        padding-bottom: 5vh;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+    }
+}
+
+/* Responsividade para Laptops */
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        grid-area: 1 / 1 / 6 / 6;
+    }
+    main #title {
+        font-size: 3rem;
+        margin: 12vh 0 8vh 0;
+    }
+
+    main #registeredData {
+        width: 80vw;
+    }
+    
+    main #registeredData .logo{
+        width: 40vw;
+    }
+
+    main #registeredData .userData {
+        width: 22vw;
         padding-bottom: 5vh;
         padding-left: 0.5vw;
         padding-right: 0.5vw;
